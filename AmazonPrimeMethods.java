@@ -1,27 +1,37 @@
-class AmazonPrime{
+class AmazonPrimeMethods{
 
-	static String kannadaMovies[]={"kalasipalya", "laalihadu", "lankeshpatrike", "namma-ramu", "suntaragali", "daasa", "darshan", "kariya", "dharma", "kooti kooti",
+	/*static String kannadaMovies[]={"kalasipalya", "laalihadu", "lankeshpatrike", "namma-ramu", "suntaragali", "daasa", "darshan", "kariya", "dharma", "kooti kooti",
 								   "yavahaadu", "yando kanda kanasu", "majestic", "sarathi", "ambareesha", "bul-bul", "virat", "robert", "odeya", "yodha", 
 								   "yajamana", "jaggudada", "bangarada manushya", "kurukshetra", "kranti"};
-								   
-	static String englishmovies[]={"love again", "a beautiful mind", "peterpan", "the fate of furious", "shang-chi", "gladiator", "hobbit", "mad max", "evil dead rise", "TYG2",
+	*/							   
+	static String englishMovies[]={"love again", "a beautiful mind", "peterpan", "the fate of furious", "shang-chi", "gladiator", "hobbit", "mad max", "evil dead rise", "TYG2",
 								   "Inception", "Hellboy", "Lost city", "Starship", "Avatar", "Avatar-2", "Lord of the rings", "gone with the wind", "Everest", "Unfaithful",
 								   "Jumanji", "DOM", "Tom cruise", "Redeeming Love", "Matrix"};
 								   
-	static String hindimovies[]={"Pathan", "tiger", "sanju", "Padmaavathi", "KGF", "Chatrapathi", "My name is Khan", "khoi mil gaya", "Ankush", "Aazam",
+	static String hindiMovies[]={"Pathan", "tiger", "sanju", "Padmaavathi", "KGF", "Chatrapathi", "My name is Khan", "khoi mil gaya", "Ankush", "Aazam",
 								 "AAG", "RAAZ", "The fakir of venice", "David", "liger", "Jalsa", "Barfi", "Drishyam", "bandaa", "Airlift", 
 								 "Arya", "gangotri", "varudu", "vedam", "happy"};
 								 
-	static String malayalammovies[]={"4 years", "The great indian kitchen", "sita ramam", "RRR", "Major", "Vikram", "Rocketry", "Kantara", "Oh my kaduvale", "Home",
+	static String malayalamMovies[]={"4 years", "The great indian kitchen", "sita ramam", "RRR", "Major", "Vikram", "Rocketry", "Kantara", "Oh my kaduvale", "Home",
 									 "Banglore days", "God father", "classmates", "Idukki gold", "Hello madras girl", "vigathakumaran", "Bheeshma pavam", "Kerala  story", "premam", "kurup",
 									 "jana gana mana", "pada", "Salute", "oh!baby", "lucifer"};
-									 
+								 
 		public static void main(String amazonprime[]){
 
+		
+		String kannadaMovies[]={"kalasipalya", "laalihadu", "lankeshpatrike", "namma-ramu", "suntaragali", "daasa", "darshan", "kariya", "dharma", "kooti kooti",
+								       "yavahaadu", "yando kanda kanasu", "majestic", "sarathi", "ambareesha", "bul-bul", "virat", "robert", "odeya", "yodha", 
+								       "yajamana", "jaggudada", "bangarada manushya", "kurukshetra", "kranti"};
 		System.out.println("main started");
 	
 		System.out.println("list of the kannadamovies are:");
-	
+		
+		getKannadaMovies(kannadaMovies);
+		getEnglishMovies();
+		fetchHindiMovies();
+		readMalayalamMovies();
+		
+	/*
 		System.out.println(kannadaMovies[0] + " " + 
 						   kannadaMovies[1] + " " + 
 						   kannadaMovies[2] + " " + 
@@ -131,12 +141,37 @@ class AmazonPrime{
 						  malayalammovies[22] + " " + 
 						  malayalammovies[23] + " " + 
 						  malayalammovies[24] );
+*/
+
+
 
 		System.out.println("main ended");
 
 
 	}
+	public static void getKannadaMovies(String kannadaMovies[]){
+		
+		for(String kannadaMovie: kannadaMovies){
+			System.out.println(kannadaMovie);
+		}
+	}
 
-
+	public static void getEnglishMovies(){
+		for(String englishMovie: englishMovies){
+			System.out.println(englishMovie);
+		}
+	}
+	
+	public static void fetchHindiMovies(){
+		for(String hindiMovie: hindiMovies){
+			System.out.println(hindiMovie);
+		}
+	}
+	
+	public static void readMalayalamMovies(){
+		for(String malayalamMovie: malayalamMovies){
+			System.out.println(malayalamMovie);
+		}
+	}
 
 }

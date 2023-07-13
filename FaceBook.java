@@ -1,3 +1,83 @@
+class FaceBook{
+
+	static String eMail= "ganavi.123@gmail.com";
+	static long phoneNumber= 1234567890;
+	static String password= "ganu123";
+	static boolean isLogin;
+	
+	
+	public static boolean login(){
+		
+		if(isLogin== false){
+			isLogin = true;
+			System.out.println("the account logged in");
+		}
+		else if(isLogin == true){
+			isLogin = false;
+			System.out.println("the login inavlid");
+		}
+		return isLogin;
+		
+	}
+	
+	
+	public static void login(String eMail, String password){
+	
+		if(eMail == eMail){
+		
+			System.out.println("the email is correct is"+eMail);
+			
+	    if(password == password){
+		
+			System.out.println("login successfull ");
+		
+		}
+		else{
+		
+			System.out.println("login Unsuccessfull");
+		}
+		}
+		else{
+			System.out.println("eMail or password is invalid");
+		}
+	
+	}
+	
+	
+	
+	public static void login(long phoneNumber, String password){
+	
+		if(phoneNumber == phoneNumber){
+		
+			System.out.println("the number is correct is"+phoneNumber);
+			
+		if(password == password){
+		
+			
+			System.out.println("login successfull ");
+		
+		}
+		else{
+		
+			System.out.println("login Unsuccessfull");
+		}
+		}
+		else{
+			System.out.println("phone or password is invalid");
+		}
+	}
+
+
+}
+
+
+
+
+
+
+/*
+
+
 class Speaker1{
 
 	static String name="jbl";
@@ -30,7 +110,7 @@ class Speaker1{
  then running the program will give the result.*/
  
  //increase  volume
-	public static void increaseVolume(){
+	/*public static void increaseVolume(){
 		if(isConnected == true){
 		
 		if(currentVolume < maxVolume){
@@ -56,16 +136,16 @@ class Speaker1{
 				currentVolume=currentVolume-1;
 				System.out.println("the currentVolume is "+currentVolume);
 			}
-			/*else{
+			else{
 				System.out.println("miv volume reached");
 			}
-			*/
+			
 		}
-		/*else{
+		else{
 			System.out.println("off the speaker");
 		}
-		*/	
+		
 	}
 }
 
-
+*/
